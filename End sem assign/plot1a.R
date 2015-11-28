@@ -1,0 +1,5 @@
+mydata<- read.table("output.txt")
+dat<- t(mydata)
+x<- seq(0.025,4, 0.025)
+y<- seq(0.0001,1, 0.025)
+filled.contour(x,y, dat, color = terrain.colors, plot.title = title(main = "Topography of Heat flow for x=0.025,B=1,w=1"), asp = 1)
